@@ -1,5 +1,5 @@
 {
-  "name": "string-escape",
+  "name": "string-escape-map",
   "version": "1.0.0",
   "description": "Escape a given map of special characters",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/do-/node-string-escape.git"
+    "url": "git+https://github.com/do-/node-string-escape-map.git"
   },
   "keywords": [
     "escape",
@@ -19,7 +19,7 @@
   "author": "Dmitry Ovsyanko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/do-/node-string-escape/issues"
+    "url": "https://github.com/do-/node-string-escape-map/issues"
   },
-  "homepage": "https://github.com/do-/node-string-escape#readme"
+  "homepage": "https://github.com/do-/node-string-escape-map#readme"
 }

@@ -1,14 +1,14 @@
-# node-string-escape
+# node-string-escape-map
 Escape a given map of special characters
 
 # Installation
 ```sh
-npm install node-string-escape
+npm install string-escape-map
 ```
 
 # Usage
 ```js
-const stringEscape = require ('string-escape')
+const stringEscape = require ('string-escape-map')
 
 // initialization
 const MY_ESC = new stringEscape ([
@@ -29,7 +29,7 @@ const safeString = MY_ESC.escape (unsafeString)
 # Details
 ## Constructor 
 
-The class provided by `string-escape` is derived from [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) and shares its [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/Map) argument format: if set, it must be an [iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) of key-value pairs.
+The class provided by `string-escape-map` is derived from [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) and shares its [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/Map) argument format: if set, it must be an [iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) of key-value pairs.
 
 Additional restrictions on input are same as for the `set` method (see below).
 
