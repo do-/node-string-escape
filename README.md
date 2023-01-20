@@ -1,3 +1,6 @@
+![workflow](https://github.com/do-/node-string-escape-map/actions/workflows/main.yml/badge.svg)
+![Jest coverage](./badges/coverage-jest%20coverage.svg)
+
 # node-string-escape-map
 Escape a given map of special characters
 
