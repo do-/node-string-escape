@@ -1,10 +1,12 @@
 {
   "name": "string-escape-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Escape a given map of special characters",
   "main": "index.js",
+  "files": ["/lib", "/badges"],
   "scripts": {
-    "test": "node test/test.js"
+    "test": "jest",
+    "test-ci": "jest --ci --coverage"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,26 @@
   "bugs": {
     "url": "https://github.com/do-/node-string-escape-map/issues"
   },
-  "homepage": "https://github.com/do-/node-string-escape-map#readme"
+  "homepage": "https://github.com/do-/node-string-escape-map#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coverageReporters": [
+      "clover",
+      "json",
+      "lcov",
+      "text",
+      "json-summary"
+    ],
+    "verbose": false,
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/data",
+      "/__tests__/lib"
+    ]
+  }
 }
