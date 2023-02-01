@@ -46,6 +46,8 @@ The standard [set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 Under the hood, the `key` parameter is subject to [charCodeAt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt).
 
+Other than registering a map entry, it sets `escape1` or `escapeN` as `this.escape` method.
+
 ## `escape`
 
 This method executes the module's main task: replaces all the characters in question with their safe representations
@@ -58,7 +60,7 @@ const safeString = MY_ESC.escape (unsafeString)
 
 `unsafeString` must be a primitive [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String). 
 
-`null`, `undefined` etc. values cause [assertion errors](https://nodejs.org/dist/latest-v16.x/docs/api/assert.html#class-assertassertionerror). 
+`null`, `undefined` etc. values cause errors.
 
 Zero length strings are allowed.
 
