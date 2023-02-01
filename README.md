@@ -66,6 +66,14 @@ Zero length strings are allowed.
 
 A primitive string with all occurrences of each character previously `set` replaced with corresponding substrings.
 
+## `escapeN`
+
+This method is used as `escape` in case when more than one entry is set in this map. It scans through `unsafeString`, detect unsafe chars with `charCodeAt` and concatenates the result from safe `slice`s glued with replacement strings from this Map.
+
+## `escape1`
+
+This method is used as `escape` when only one unsafe character is known, so this works as `replaceAll`. The `unsafeString` is scanned with `indexOf`, the result is assembled from the `slice`s detected.
+
 # Implementation notes
 
 No [replace](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace) nor [replaceAll](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll) method is used.
