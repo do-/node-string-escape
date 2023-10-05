@@ -1,4 +1,4 @@
-module.exports = class extends Map {
+export default class extends Map {
 
 	set (k, v) {
 
@@ -77,4 +77,3 @@ module.exports = class extends Map {
 	}
 
 }
-

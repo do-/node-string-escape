@@ -1,4 +1,4 @@
-const esc = require ('../')
+import esc from '../'
 
 test ('qq', () => {
 

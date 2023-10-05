@@ -11,7 +11,9 @@ npm install string-escape-map
 
 # Usage
 ```js
-const stringEscape = require ('string-escape-map')
+//const stringEscape = require ('string-escape-map') // v.1.x.x — CommonJS
+
+import stringEscape from 'string-escape-map'         // v.2.x.x — ES6 module
 
 // initialization
 const MY_ESC = new stringEscape ([
