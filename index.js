@@ -1,14 +1,10 @@
-const assert = require ('assert')
-
 module.exports = class extends Map {
 
 	set (k, v) {
-	
-		assert.strictEqual (typeof k, 'string')
-		assert.strictEqual (k.length, 1, 'Mapping keys must be single chars, found: ' + k)
-		
-		assert.strictEqual (typeof v, 'string')
-		
+
+		if (typeof k !== 'string' || k.length !== 1) throw Error ('Mapping keys must be single chars, found: ' + k)
+		if (typeof v !== 'string')                   throw Error ('Mapping values must be strings, found: ' + k)
+					
 		if (this.size === 0) {
 		
 			this.k = k

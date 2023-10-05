@@ -1,6 +1,6 @@
 {
   "name": "string-escape-map",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Escape a given map of special characters",
   "main": "index.js",
   "files": ["/lib", "/badges"],
